@@ -38,7 +38,6 @@ const verifyStatus = async function(telNumber){
         statusNumber.classList.toggle('success')
         phoneRegion.classList.toggle('success')
         renderStatus('Valid', data.phone_region)
-        console.log(data)
     }else{
         statusNumber.classList.toggle('fail')
         phoneRegion.classList.toggle('fail')
