@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Phone Validator</title>
+</head>
+<body>
+    <main>
+        
+        <div class="container">
+            <div class="form-container">
+                <div class="status-response">
+                    <h4>Status: <span class="status"></span> </h4>
+                    <p>
+                        <h4>Phone-Region: <span class="phone_region"></span> </h4> 
+                    </p>
+                    
+                </div>
+            <form method="POST">
+                <label for="country-code">Enter your country code:</label>
+                <input type="number" name="countryCode" id="countryCode" value=""><br><br>
+                <label for="number">Enter your phone number:</label>
+                <input type="number" name="phoneNumber" id="phoneNumber" value="" placeholder="e.g 090*****"><br><br>
+                <div class="btn_submit_container">
+                    <button type="submit" class="submit-btn">Submit</button>
+                    <button type="reset" class="reset">Reset</button>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+    </main>
+
+   
+    
+</body>
+</html>
