@@ -68,5 +68,5 @@ btn.addEventListener("click", function (e) {
 });
 
 resetForm.addEventListener("click", function (e) {
-  window.location.reload();
+    resetForm.reset();
 });
