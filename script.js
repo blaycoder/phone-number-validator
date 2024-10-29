@@ -11,27 +11,10 @@ const carrierName = document.querySelector(".carrier_name");
 
 
 const renderStatus = function (msg, phone_region, carrier_name) {
-  // let html = `
-  // <h4>Status: <span class="status"> ${msg}</span> </h4>
-  // <p>
-  //    <h4>Phone-Region: <span class="phone_region"${phone_region}</span> </h4>
-  // </p>
-  // `;
-  // statusResponse.insertAdjacentHTML('beforeend', html);
   statusNumber.insertAdjacentText("beforeend", msg);
   phoneRegion.insertAdjacentText("beforeend", phone_region);
   carrierName.insertAdjacentText("beforeend", carrier_name);
 };
-
-// const options = {
-// 	method: 'GET',
-// 	headers: {
-// 		'X-RapidAPI-Key': 'f3ac58eedcmsh158cae8631cd06ep1ae4a0jsnce95e6464a1d',
-// 		'X-RapidAPI-Host': 'veriphone.p.rapidapi.com'
-// 	}
-// };
-
-//numVerify API key = 84b292f040580e9324b9880b07a25fef
 
 const verifyStatus = async function (telNumber) {
   try {
